@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Project } from "@/typings";
-import urlFor from "@/sanity/lib/urlFor";
+import urlFor from "../sanity/libs/urlFor";
 
 type Props = {
   projects: Project[];
@@ -13,9 +13,9 @@ function Projects({ projects }: Props) {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
-      className="h-screen relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
+      className="h-[110vh] relative flex overflow-hidden flex-col text-left md:flex-row max-w-full justify-evenly mx-auto items-center z-0"
     >
-      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h3 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl  text-center md:left-[500px] left-14">
         Projects
       </h3>
 
@@ -23,7 +23,7 @@ function Projects({ projects }: Props) {
         {projects.map((project, i) => (
           <div
             key={project?._id}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 md:space-y-5 items-center justify-center p-10 md:p-10 h-screen"
+            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-2 md:space-y-5 items-center justify-center p-10 md:p-10 h-screen mt-10"
           >
             <motion.img
               initial={{
@@ -33,7 +33,7 @@ function Projects({ projects }: Props) {
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              src={urlFor(project.image).url()}
+              src={urlFor(project?.image).url()}
               className="w-72 rounded-lg"
             />
             <div className="space-y-1 md:space-y-2 px-0 md:px-10 max-w-5xl">

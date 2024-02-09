@@ -21,13 +21,14 @@ function Skillz({ skills }: Props) {
         Hover for current skill profficiency
       </h3>
       <div className="grid grid-cols-4 gap-4 pt-28">
-        {skills?.slice(0, skills.length / 2).map((skill) => (
+        {/* .slice(0, skills.length / 2) */}
+        {skills?.map((skill) => (
           <Skill key={skill._id} skill={skill} />
         ))}
 
-        {skills?.slice(skills.length / 2, skills.length).map((skill) => (
+        {/* {skills?.slice(skills.length / 2, skills.length).map((skill) => (
           <Skill key={skill._id} skill={skill} directionLeft />
-        ))}
+        ))} */}
       </div>
     </motion.div>
     // <div>Comming soon</div>

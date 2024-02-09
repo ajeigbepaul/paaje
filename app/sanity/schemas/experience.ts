@@ -47,7 +47,7 @@ export default defineType( {
       name: 'points',
       title: 'Points',
       type: 'array',
-      of:[{type:"block"}]
+      of:[{type:"string"}]
     }),
   ],
 

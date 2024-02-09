@@ -40,7 +40,7 @@ export default function Hero({ pageInfo }: Props) {
           <span className="mr-3">{text}</span>
           <Cursor cursorColor="#f68" />
         </h1>
-        <div className=" pt-1 md:pt-4 ">
+        <div className=" pt-1 md:pt-14 ">
           <a href="#about">
             <button className="px-6 py-2 border border-[#242424] rounded-full uppercase text-xs tracking-widest text-gray-500 transition-all hover:border-[#f68]/40 hover:text-[#f68]/40">
               About

@@ -36,7 +36,7 @@ export default function Contact({}: Props) {
           </div>
           <div className="flex items-center space-x-2 justify-center">
             <MapPinIcon className="text-[#f68] h-4 w-4 md:h-7 md:w-7 animate-pulse" />
-            <p className="text-xs">Avera Estate Ajah Lagos</p>
+            <p className="text-xs">28, Alonge str, Ayobo, Lagos</p>
           </div>
         </div>
         <form
