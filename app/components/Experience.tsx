@@ -6,7 +6,7 @@ type Props = { experiences: Experiences[] };
 
 function Experience({ experiences }: Props) {
   return (
-    <div className="h-[120vh] flex relative overflow-hidden flex-col md:flex-row text-left max-w-full px-10 justify-evenly mx-auto items-center bg-white">
+    <div className="md:h-[120vh] h-screen flex relative overflow-hidden flex-col md:flex-row text-left max-w-full px-10 justify-evenly mx-auto items-center bg-white">
       <h3 className="absolute top-24 md:top-20 uppercase tracking-[10px] md:tracking-[20px] text-[#f68]/80 text-2xl">
         Experience
       </h3>
